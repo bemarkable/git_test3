@@ -16,7 +16,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React 123 456 789 0
-          123 456
+          123 456 789
         </a>
       </header>
     </div>
