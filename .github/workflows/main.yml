@@ -39,7 +39,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.INOME_TOKEN }}
+          password: ${{ secrets.GHCR_TOKEN }}
           # 우리가 방금 복사해서 setting secrets 에 붙여줬던 token 이다. 이름을 기억해 넣어주자.
           # 우리의 ghcr.io 에 접근하기 위함이다.
         
@@ -54,7 +54,7 @@ jobs:
   deploy:
     needs: build
     name: Deploy
-    runs-on: [ self-hosted, label-superman ]
+    runs-on: [ self-hosted,  ]
     # label-superman 라는 이름으로 AWS EC2 가 Runner 를 작동시킬 때 사용했던 그 label
     steps:
       - name: Login to ghcr
@@ -62,7 +62,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.INOME_TOKEN }}
+          password: ${{ secrets.GHCR_TOKEN }}
       
       - name: Docker run
         run: |
