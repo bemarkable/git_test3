@@ -28,16 +28,16 @@ export const metadata = {
 const DRAWER_WIDTH = 240;
 
 const LINKS = [
-  { text: 'Home', href: '/', icon: HomeIcon },
-  { text: 'Starred', href: '/starred', icon: StarIcon },
-  { text: 'Tasks', href: '/tasks', icon: ChecklistIcon },
+  { text: 'Page1', href: '/', icon: HomeIcon },
+  { text: 'Page2', href: '/starred', icon: StarIcon },
+  { text: 'Page3', href: '/tasks', icon: ChecklistIcon },
 ];
 
-const PLACEHOLDER_LINKS = [
-  { text: 'Settings', icon: SettingsIcon },
-  { text: 'Support', icon: SupportIcon },
-  { text: 'Logout', icon: LogoutIcon },
-];
+const PLACEHOLDER_LINKS = [];
+  // { text: 'Settings', icon: SettingsIcon },
+  // { text: 'Support', icon: SupportIcon },
+  // { text: 'Logout', icon: LogoutIcon },
+//];
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -48,7 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Toolbar sx={{ backgroundColor: 'background.paper' }}>
               <DashboardIcon sx={{ color: '#444', mr: 2, transform: 'translateY(-2px)' }} />
               <Typography variant="h6" noWrap component="div" color="black">
-                Next.js App Router
+                Next.js App
               </Typography>
             </Toolbar>
           </AppBar>
@@ -81,7 +81,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               ))}
             </List>
             <Divider sx={{ mt: 'auto' }} />
-            <List>
+            {/* <List>
               {PLACEHOLDER_LINKS.map(({ text, icon: Icon }) => (
                 <ListItem key={text} disablePadding>
                   <ListItemButton>
@@ -92,7 +92,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   </ListItemButton>
                 </ListItem>
               ))}
-            </List>
+            </List> */}
           </Drawer>
           <Box
             component="main"

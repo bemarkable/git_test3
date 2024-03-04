@@ -7,7 +7,10 @@ const nextConfig = {
       transform: '@mui/icons-material/{{member}}',
     },
   },
+  output: 'export',
+  trailingSlash: true,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
