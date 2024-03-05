@@ -28,9 +28,12 @@ export const metadata = {
 const DRAWER_WIDTH = 240;
 
 const LINKS = [
-  { text: 'Page1', href: '/', icon: HomeIcon },
-  { text: 'Page2', href: '/starred', icon: StarIcon },
-  { text: 'Page3', href: '/tasks', icon: ChecklistIcon },
+  { text: 'Page1(30)', href: '/', icon: HomeIcon },
+  { text: 'Page2(100)', href: '/starred', icon: StarIcon },
+  { text: 'Page3(500)', href: '/tasks', icon: ChecklistIcon },
+  { text: 'Page4(1000)', href: '/night', icon: SettingsIcon },
+  { text: 'Page5(10000)', href: '/view', icon: SupportIcon },
+  // { text: 'Page6(50000)', href: '/fight', icon: LogoutIcon },
 ];
 
 const PLACEHOLDER_LINKS = [];
