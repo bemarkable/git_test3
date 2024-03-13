@@ -33,7 +33,7 @@ const LINKS = [
   { text: 'Page3(500)', href: '/tasks', icon: ChecklistIcon },
   { text: 'Page4(1000)', href: '/night', icon: SettingsIcon },
   { text: 'Page5(10000)', href: '/view', icon: SupportIcon },
-  // { text: 'Page6(50000)', href: '/fight', icon: LogoutIcon },
+  { text: 'Page6(25000)', href: '/fight', icon: LogoutIcon },
 ];
 
 const PLACEHOLDER_LINKS = [];

@@ -271,7 +271,7 @@ export default function StarredPage() {
   },[])
   const getdata = async () => {
     try {
-      const response = await axios.get("/api/list50000.php");
+      const response = await axios.get("/api/list25000.php");
       setList(response.data)
     } catch (error) {
       alert('조회 에러');
